@@ -1,5 +1,8 @@
 import pandas as pd
 
+def load_csv(path):
+    return pd.read_csv(path)
+
 def load_market_data():
     data = {
         "Year": [2019, 2020, 2021, 2022, 2023, 2024],

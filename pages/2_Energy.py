@@ -1,10 +1,10 @@
 import streamlit as st
-from utils.data_loader import load_market_data
+from utils.data_loader import load_csv
 from utils.charts import line_chart, gauge_chart
 
 st.title("Energy Efficiency")
 
-df = load_market_data()
+df = load_csv("data/energy.csv")
 last_row = df.iloc[-1]
 
 c1, c2, c3 = st.columns(3)
