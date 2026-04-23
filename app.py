@@ -25,12 +25,40 @@ st.markdown("""
 
 st.markdown("""
 <style>
-body {
-    background-color: #white;
-    color: #f5f5f0;
+.stApp {
+    background-color: #0E1117;
+    color: #FFFFFF;
 }
+
 h1, h2, h3 {
-    color: #c9a84c;
+    color: #00C6FF;
+}
+
+/* tarjetas de métricas */
+[data-testid="stMetric"] {
+    background: #1c2333;
+    border: 1px solid #2f3b52;
+    padding: 18px;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+}
+
+/* etiqueta pequeña */
+[data-testid="stMetricLabel"] {
+    color: #c9d4f2 !important;
+    font-weight: 600;
+}
+
+/* valor grande */
+[data-testid="stMetricValue"] {
+    color: #ffffff !important;
+    font-size: 2rem !important;
+    font-weight: 700;
+}
+
+/* texto general */
+p, li, div {
+    color: #e8eefc;
 }
 </style>
 """, unsafe_allow_html=True)
