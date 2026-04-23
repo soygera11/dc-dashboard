@@ -4,7 +4,7 @@ from utils.charts import line_chart, bar_chart
 
 st.title("Operations Dashboard")
 
-df = load_market_data("data/operations.csv")
+df = load_market_data
 
 last_row = df.iloc[-1]
 

@@ -4,7 +4,7 @@ from utils.charts import bar_chart
 
 st.title("Emerging Technologies")
 
-df = load_market_data("data/emerging_tech.csv")
+df = load_market_data()
 
 st.plotly_chart(bar_chart(df, "technology", "adoption_score", "Technology Adoption Score"), use_container_width=True)
 

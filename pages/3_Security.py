@@ -4,7 +4,7 @@ from utils.charts import bar_chart
 
 st.title("Security & Compliance")
 
-df = load_market_data("data/security.csv")
+df = load_market_data()
 
 compliant_count = (df["status"] == "Compliant").sum()
 partial_count = (df["status"] == "Partial").sum()
