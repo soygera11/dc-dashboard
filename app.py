@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.set_page_config(
-    page_title="QRO Nexus DC Intelligence",
+    page_title="QRO Nexus DC Intelligence GC",
     page_icon="🏢",
     layout="wide"
 )
