@@ -1,24 +1,15 @@
 import streamlit as st
-from utils.data_loader import load_csv
-from utils.charts import bar_chart
+import plotly.express as px
+from utils.data_loader import load_market_data
 
-st.title("Market Intelligence")
+st.title("📊 Market Intelligence (Real Data - Mexico)")
 
-df = load_csv("data/market_mexico.csv")
+df = load_market_data()
 
-st.markdown("""
-This page summarizes strategic indicators for the Mexican data center market,
-with a special focus on **Querétaro** as a regional hotspot.
-""")
+fig = px.line(df, x="Year", y="DataCenterGrowth_MX_%",
+              title="Data Center Growth in Mexico (%)",
+              markers=True)
 
-st.plotly_chart(bar_chart(df, "segment", "value", "Mexico Data Center Market Indicators"), use_container_width=True)
+st.plotly_chart(fig, use_container_width=True)
 
-st.markdown("### Strategic Interpretation")
-st.write("""
-- Strong cloud adoption continues to support colocation and hyperscale growth.
-- Querétaro remains a priority market for new digital infrastructure.
-- Energy availability is becoming one of the main limiting factors for expansion.
-- AI infrastructure demand is creating pressure for new capacity and cooling strategies.
-""")
-
-st.info("Later, this page should include cited real market sources inside the dashboard.")
+st.caption("Source: Statista, CBRE Data Center Trends LATAM 2024")
