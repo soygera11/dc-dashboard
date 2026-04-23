@@ -1,0 +1,7 @@
+month,it_load_kw,total_facility_kw,pue,energy_cost_usd
+Jan,420,620,1.48,18200
+Feb,430,628,1.46,18450
+Mar,440,633,1.44,18720
+Apr,455,646,1.42,19110
+May,460,649,1.41,19300
+Jun,470,658,1.40,19680

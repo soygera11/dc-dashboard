@@ -1,0 +1,11 @@
+control,status,category
+CCTV Monitoring,Compliant,Physical Security
+Biometric Access,Compliant,Access Control
+Visitor Logs,Compliant,Access Control
+Fire Detection,Compliant,Safety
+Redundant UPS,Compliant,Power
+Perimeter Fence,Compliant,Physical Security
+Patch Management,Partial,Cybersecurity
+Incident Response Plan,Compliant,Governance
+ISO 27001 Documentation,Partial,Governance
+TIA-942 Alignment,Partial,Compliance

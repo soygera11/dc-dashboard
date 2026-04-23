@@ -1,0 +1,7 @@
+month,uptime_sla,open_incidents,closed_changes,rack_utilization,service_requests
+Jan,99.95,4,12,68,23
+Feb,99.97,3,15,70,25
+Mar,99.98,2,18,72,21
+Apr,99.99,2,20,73,24
+May,99.97,3,19,74,26
+Jun,99.98,2,22,76,28
