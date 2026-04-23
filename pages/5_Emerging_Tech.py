@@ -1,10 +1,10 @@
 import streamlit as st
-from utils.data_loader import load_csv
+from utils.data_loader import load_market_data
 from utils.charts import bar_chart
 
 st.title("Emerging Technologies")
 
-df = load_csv("data/emerging_tech.csv")
+df = load_market_data("data/emerging_tech.csv")
 
 st.plotly_chart(bar_chart(df, "technology", "adoption_score", "Technology Adoption Score"), use_container_width=True)
 

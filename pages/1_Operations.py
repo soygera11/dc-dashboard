@@ -1,10 +1,10 @@
 import streamlit as st
-from utils.data_loader import load_csv
+from utils.data_loader import load_market_data
 from utils.charts import line_chart, bar_chart
 
 st.title("Operations Dashboard")
 
-df = load_csv("data/operations.csv")
+df = load_market_data("data/operations.csv")
 
 last_row = df.iloc[-1]
 

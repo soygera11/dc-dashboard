@@ -1,10 +1,10 @@
 import streamlit as st
-from utils.data_loader import load_csv
+from utils.data_loader import load_market_data
 from utils.charts import bar_chart
 
 st.title("Security & Compliance")
 
-df = load_csv("data/security.csv")
+df = load_market_data("data/security.csv")
 
 compliant_count = (df["status"] == "Compliant").sum()
 partial_count = (df["status"] == "Partial").sum()
