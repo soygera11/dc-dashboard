@@ -113,6 +113,30 @@ p, li, div {
 """, unsafe_allow_html=True)
 
 st.markdown("""
+<style>
+/* texto de opciones del dropdown */
+div[role="option"] span {
+    color: #ffffff !important;
+}
+
+/* texto interno del popup */
+div[role="listbox"] * {
+    color: #ffffff !important;
+}
+
+/* fondo de las opciones */
+div[role="option"] {
+    background-color: #1e293b !important;
+}
+
+/* hover */
+div[role="option"]:hover {
+    background-color: #334155 !important;
+}
+</style>
+""", unsafe_allow_html=True)
+
+st.markdown("""
 <h1 style='color:#c9a84c;'>QRO Nexus DC Intelligence</h1>
 <h3 style='color:#7b2fb5;'>Operational Visibility for Mexico's Digital Infrastructure</h3>
 """, unsafe_allow_html=True)
