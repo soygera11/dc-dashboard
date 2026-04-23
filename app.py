@@ -60,6 +60,34 @@ h1, h2, h3 {
 p, li, div {
     color: #e8eefc;
 }
+
+/* Selectbox (dropdown) */
+[data-testid="stSelectbox"] > div {
+    background-color: #1c2333 !important;
+    color: white !important;
+    border-radius: 10px;
+}
+
+/* Texto dentro del select */
+[data-testid="stSelectbox"] div div {
+    color: white !important;
+}
+
+/* Dropdown opciones */
+ul[role="listbox"] {
+    background-color: #1c2333 !important;
+}
+
+/* Cada opción */
+ul[role="listbox"] li {
+    color: white !important;
+}
+
+/* Hover opción */
+ul[role="listbox"] li:hover {
+    background-color: #2f3b52 !important;
+}
+            
 </style>
 """, unsafe_allow_html=True)
 
