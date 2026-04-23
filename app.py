@@ -1,4 +1,5 @@
 import streamlit as st
+from utils.data_loader import load_market_data
 
 st.set_page_config(
     page_title="QRO Nexus DC Intelligence GC",
@@ -25,7 +26,7 @@ st.markdown("""
 st.markdown("""
 <style>
 body {
-    background-color: #0a0a0a;
+    background-color: #white;
     color: #f5f5f0;
 }
 h1, h2, h3 {
@@ -69,6 +70,8 @@ region = st.selectbox(
 )
 
 st.write(f"Showing data for: {region}")
+
+df = load_market_data()
 
 csv = df.to_csv(index=False).encode('utf-8')
 
