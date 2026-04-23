@@ -22,72 +22,93 @@ st.markdown("""
     }
     </style>
 """, unsafe_allow_html=True)
-
 st.markdown("""
 <style>
+/* Fondo general */
 .stApp {
-    background-color: #0E1117;
-    color: #FFFFFF;
+    background: linear-gradient(135deg, #020817 0%, #06152b 100%);
+    color: #ffffff;
 }
 
-h1, h2, h3 {
-    color: #00C6FF;
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background-color: #111827 !important;
 }
 
-/* tarjetas de métricas */
+section[data-testid="stSidebar"] * {
+    color: #e5e7eb !important;
+}
+
+/* Tarjetas de métricas */
 [data-testid="stMetric"] {
-    background: #1c2333;
-    border: 1px solid #2f3b52;
+    background: linear-gradient(135deg, #162033 0%, #1d2b45 100%);
+    border: 1px solid #3d5a80;
     padding: 18px;
-    border-radius: 14px;
+    border-radius: 16px;
     box-shadow: 0 4px 14px rgba(0,0,0,0.25);
 }
 
-/* etiqueta pequeña */
 [data-testid="stMetricLabel"] {
-    color: #c9d4f2 !important;
+    color: #9ec5fe !important;
     font-weight: 600;
 }
 
-/* valor grande */
 [data-testid="stMetricValue"] {
     color: #ffffff !important;
-    font-size: 2rem !important;
-    font-weight: 700;
+    font-size: 2.1rem !important;
+    font-weight: 800;
 }
 
-/* texto general */
-p, li, div {
-    color: #e8eefc;
+/* Selectbox label */
+[data-testid="stWidgetLabel"] p,
+label, .stSelectbox label {
+    color: #ffffff !important;
+    font-weight: 600;
 }
 
-/* Selectbox (dropdown) */
-[data-testid="stSelectbox"] > div {
-    background-color: #1c2333 !important;
-    color: white !important;
-    border-radius: 10px;
+/* Caja cerrada del select */
+[data-baseweb="select"] > div {
+    background-color: #1e293b !important;
+    color: #ffffff !important;
+    border: 1px solid #334155 !important;
+    border-radius: 12px !important;
 }
 
 /* Texto dentro del select */
-[data-testid="stSelectbox"] div div {
-    color: white !important;
+[data-baseweb="select"] span,
+[data-baseweb="select"] div {
+    color: #ffffff !important;
 }
 
-/* Dropdown opciones */
-ul[role="listbox"] {
-    background-color: #1c2333 !important;
+/* Menú desplegable */
+div[role="listbox"] {
+    background-color: #1e293b !important;
+    color: #ffffff !important;
+    border: 1px solid #334155 !important;
 }
 
-/* Cada opción */
-ul[role="listbox"] li {
-    color: white !important;
+/* Opciones del menú */
+div[role="option"] {
+    background-color: #1e293b !important;
+    color: #ffffff !important;
 }
 
-/* Hover opción */
-ul[role="listbox"] li:hover {
-    background-color: #2f3b52 !important;
+/* Hover y opción seleccionada */
+div[role="option"]:hover,
+div[aria-selected="true"] {
+    background-color: #334155 !important;
+    color: #ffffff !important;
 }
-            
+
+/* Inputs en general */
+input, textarea {
+    color: #ffffff !important;
+}
+
+/* Texto general */
+p, li, div {
+    color: #e5e7eb;
+}
 </style>
 """, unsafe_allow_html=True)
 
